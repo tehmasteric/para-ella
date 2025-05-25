@@ -1,0 +1,7 @@
+const musica = document.getElementById('musica');
+musica.volume = 0.8; // volumen fuerte
+musica.play().catch(e => console.log('Error al reproducir:', e));
+
+document.getElementById('carta').addEventListener('click', () => {
+  musica.play().catch(e => console.log('Error al reproducir:', e));
+});
